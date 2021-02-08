@@ -1,9 +1,10 @@
 import React from "react";  // import React (to provide access to JSX)
+import './PhotoViewer.css';
 
-function PhotoViewer() {    // declare a new function called 'PhotoViewer'
+function PhotoViewer(props) {    // declare a new function called 'PhotoViewer'
     return (                
-        <div>               // return some JSX 
-            Hello World!
+        <div className='large'>              
+      <img src={props.src}/>
         </div>
     );
 }

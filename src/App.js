@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div>
             <h1>React Photo Viewer</h1>
-            <PhotoViewer/>
+            <PhotoViewer src={'https://picsum.photos/200/300'}/>
         </div>
     </div>
   );
