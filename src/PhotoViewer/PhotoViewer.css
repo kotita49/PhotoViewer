@@ -1,7 +1,8 @@
 .large{
-    width: 600px;
-    height: 800px;
-    background-color: aquamarine;
+   
     text-align: center;
     padding: 50px 50px;
+}
+img:active {
+    border: 5px solid red;
 }

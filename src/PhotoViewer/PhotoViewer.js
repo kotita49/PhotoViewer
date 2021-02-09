@@ -1,15 +1,15 @@
 import React from "react";  // import React (to provide access to JSX)
 import './PhotoViewer.css';
 
-// function PhotoViewer(props) {    // declare a new function called 'PhotoViewer'
-//     return (                
-//         <div className='large'>              
-//       <img src={props.src}/>
-//         </div>
-//     );
-// }
+function PhotoViewer(props) {    // declare a new function called 'PhotoViewer'
+    return (                
+        <div className='large'>              
+      <img src={props.src}/>
+        </div>
+    );
+}
 
-// export {PhotoViewer};       // Export the function so that it can be imported in other files
+       // Export the function so that it can be imported in other files
 
 const brokenImages = [
     1, 24, 32, 36, 44, 47
@@ -24,8 +24,8 @@ function getImageUrls() {
             urls.push(`https://picsum.photos/id/6${imageNumberString}/200/300.jpg`)
         }
     }
-    
-    return urls;
+   return urls;
 }
 
-export const ImageUrls = getImageUrls()
+export const ImageUrls = getImageUrls();
+export {PhotoViewer};

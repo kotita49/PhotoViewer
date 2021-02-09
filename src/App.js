@@ -3,28 +3,25 @@ import './App.css';
 import { PhotoViewer } from './PhotoViewer/PhotoViewer.js';
 import { ImageUrls } from './PhotoViewer/PhotoViewer.js';
 import React, { useState } from 'react';
+import { Images } from './PhotoViewer/Images.js';
+
 
 function App() {
-  const [url, setUrl] = useState(ImageUrls[0]);
-
-  function changeImage(){
-  setUrl(ImageUrls[Math.floor(Math.random()*ImageUrls.length)])
-}
   
-  return (
-        
+    return (
     <div className="App">
-      <div>
-            <h1>React Photo Viewer</h1>
-            <p>The url: {url}</p>
-            <p><img src={url}/></p>
-            <button onClick={ changeImage }>
-        Change Image
-      </button>
-        </div>
-    </div>
+     < h1>React Photo Viewer</h1>
+                 <PhotoViewer src={'https://picsum.photos/1200/800'}/>
+                 <Images/>
+                      
+                      
+                   </div>
+ 
   );
 }
 
 
+
+
 export default App;
+
